@@ -52,3 +52,21 @@
   #navbar li:hover {
     background-color: lightgray;
   }
+
+  .expandableOpen {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .expandableClosed {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -150px;
+    left: -150px;
+  }
+
+  .textSection {
+    background-color: lightgray;
+  }
