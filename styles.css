@@ -67,6 +67,6 @@
     left: -150px;
   }
 
-  .textSection {
+  .textSection:hover {
     background-color: lightgray;
   }
