@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <script>
-      function openBox() {
-          let el = document.getElementById("testing");
+      function openBox(currentBox) {
+          let el = document.getElementById(currentBox);
           if (el.className = "expandableClosed") {
               el.classList.replace("expandableClosed", "expandableOpen");
           }
@@ -21,6 +21,10 @@
           if (el.className = "expandableOpen") {
               el.classList.replace("expandableOpen", "expandableClosed");
           }
+      }
+
+      function testing(passedVar) {
+         alert(passedVar);
       }
     </script>
   </head>
@@ -40,9 +44,10 @@
       <div id="main-content">
         <section class="main-section" id="Article_I">
           <header>I. Of Faith in the Holy Trinity</header>
-          <article>
-            <p>There is but one living and true God, everlasting, without body, parts, or passions; of infinite power, wisdom, 
+          <article class="textSection">
+            <p name="art_1_1" onclick="openBox('art_1_1')">There is but one living and true God, everlasting, without body, parts, or passions; of infinite power, wisdom, 
   and goodness; the Maker, and Preserver of all things both visible and invisible.</p>
+            <p id = "art_1_1" class="expandableClosed">Testing</p>
             <p>And in unity of this Godhead there be three Persons, of one substance, power, and eternity; the Father, the 
   Son, and the Holy Ghost.</p>
           </article>
