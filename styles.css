@@ -55,8 +55,21 @@
 
   .expandableOpen {
     position: relative;
-    width: 100%;
+    width: auto;
     height: auto;
+    padding: 5px;
+    border: 1px solid black;
+    overflow-y: auto;
+    max-height: 50vh;
+  }
+
+  .expandableOpen ul {
+    list-style-type: none;
+  }
+
+  .expandableOpen h2 {
+    font-size: 1.1rem;
+    font-family: 'Cabin', sans-serif;
   }
 
   .expandableClosed {
@@ -69,4 +82,9 @@
 
   .textSection:hover {
     background-color: lightgray;
+  }
+
+  .closeButton {
+    position: absolute;
+    right: 10px;
   }

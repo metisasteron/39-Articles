@@ -16,8 +16,8 @@
           }
       }
 
-      function closeBox() {
-          let el = document.getElementById("testing");
+      function closeBox(currentBox) {
+          let el = document.getElementById(currentBox);
           if (el.className = "expandableOpen") {
               el.classList.replace("expandableOpen", "expandableClosed");
           }
@@ -44,10 +44,170 @@
       <div id="main-content">
         <section class="main-section" id="Article_I">
           <header>I. Of Faith in the Holy Trinity</header>
-          <article class="textSection">
-            <p name="art_1_1" onclick="openBox('art_1_1')">There is but one living and true God, everlasting, without body, parts, or passions; of infinite power, wisdom, 
-  and goodness; the Maker, and Preserver of all things both visible and invisible.</p>
-            <p id = "art_1_1" class="expandableClosed">Testing</p>
+          <article>
+            <p><span class="textSection" onclick="openBox('art_1_1')">There is but one</span> <span class="textSection" onclick="openBox('art_1_2')">living and true God,</span> <span class="textSection" onclick="openBox('art_1_3')">everlasting,</span> <span class="textSection" onclick="openBox('art_1_4')">without body, parts, or passions;</span> <span class="textSection" onclick="openBox('art_1_5')">of infinite power,</span> <span class="textSection" onclick="openBox('art_1_6')">wisdom,</span> 
+              <span class="textSection" onclick="openBox('art_1_7')">and goodness;</span> <span class="textSection" onclick="openBox('art_1_8')">the Maker, and Preserver of all things both visible and invisible.</span></p>
+              <div id = "art_1_1" class="expandableClosed">
+                <button class="closeButton" onclick="closeBox('art_1_1')">x</button>
+                <h2>"One God"</h2>
+                <ul>
+                  <li>Deuteronomy 6:4; 4:35</li>
+                  <li>Isaiah 44:6, compare v. 8</li>
+                  <li>Mark 11:32</li>
+                  <li>John 17:3</li>
+                  <li>1 Corinthians 8:4</li>
+                  <li>Galatians 3:20</li>
+                  <li>1 Timothy 2:5</li>
+                  <li>James 2:19</li>
+                  <li>Jude 4; 25</li>
+                  <li>Exodus 20:3</li>
+                  <li>2 Samuel 22:32</li>
+                  <li>Psalm 86:10</li>
+                  <li>Isaiah 37:16; 42:8</li>
+                  <li>Mark 12:29</li>
+                  <li>1 Corinthians 8:6</li>
+                  <li>Ephesians 4:6</li>
+                </ul>
+              </div>
+              <div id = "art_1_2" class="expandableClosed">
+              <button class="closeButton" onclick="closeBox('art_1_2')">x</button>
+              <h2>"Living and True"</h2>
+              <ul>
+                <li>Exodus 3:6, 14, 15; 6:2, 3</li>
+                <li>Numbers 27:16</li>
+                <li>Deuteronomy 5:26</li>
+                <li>Joshua 3:10</li>
+                <li>1 Samuel 17:26</li>
+                <li>Psalm 43:2; 84:2</li>
+                <li>Isaiah 43:8</li>
+                <li>Jeremiah 10:10</li>
+                <li>Daniel 6:26</li>
+                <li>Matthew 16:16</li>
+                <li>John 17:3</li>
+                <li>Acts 14:15</li>
+                <li>Romans 9:26</li>
+                <li>2 Corinthians 6:16</li>
+                <li>1 Thessalonians 1:9</li>
+                <li>1 Timothy 4:10; 6:17</li>
+                <li>Hebrews 10:31</li>
+                <li>Revelation 4:8; 10:5, 6</li>
+              </ul>
+            </div>
+            <div id = "art_1_3" class="expandableClosed">
+              <button class="closeButton" onclick="closeBox('art_1_3')">x</button>
+              <h2>"Everlasting"</h2>
+              <ul>
+                <li>Genesis 21:33</li>
+                <li>Deuteronomy 33:27</li>
+                <li>Psalm 9:7; 90:2, 4; 102:12, 26, 27</li>
+                <li>Isaiah 44:6; 57:15</li>
+                <li>Lamentations 5:19</li>
+                <li>Romans 1:20; 16:26</li>
+                <li>1 Timothy 1:17</li>
+                <li>Revelation 1:8; 5:14; 10:6</li>
+              </ul>
+            </div>
+            <div id = "art_1_4" class="expandableClosed">
+              <button class="closeButton" onclick="closeBox('art_1_4')">x</button>
+              <h2>"Without Body, Parts, or Passions"</h2>
+              <ul>
+                <li>John 4:24</li>
+                <li>Isaiah 40:18, 25</li>
+                <li>Deuteronomy 4:15</li>
+                <li>Luke 24:39</li>
+                <li>John 1:18; 5:37</li>
+                <li>Acts 17:24, 28, 29</li>
+                <li>Romans 1:20, 21</li>
+                <li>1 Timothy 1:17; 6:16</li>
+                <li>Numbers 23:19</li>
+                <li>Malachi 3:6</li>
+                <li>Hebrews 6:17, 18</li>
+                <li>James 1:13, 17</li>
+              </ul>
+            </div>
+            <div id = "art_1_5" class="expandableClosed">
+              <button class="closeButton" onclick="closeBox('art_1_5')">x</button>
+              <h2>"Of Infinite Power"</h2>
+              <ul>
+                <li>Genesis 17:1; 18:14</li>
+                <li>Job 42:2</li>
+                <li>Jeremiah 32:17, 27</li>
+                <li>Matthew 19:26</li>
+                <li>Ephesians 3:20</li>
+                <li>Revelation 4:11; 19:6</li>
+              </ul>
+            </div>
+            <div id = "art_1_6" class="expandableClosed">
+              <button class="closeButton" onclick="closeBox('art_1_6')">x</button>
+              <h2>"Wisdom"</h2>
+              <ul>
+                <li>Genesis 16:13</li>
+                <li>1 Samuel 2:3</li>
+                <li>1 Kings 8:39</li>
+                <li>Job 26:6; 28:10, 23, 24; 34:21</li>
+                <li>Psalm 44:21; 94:9; 139:4</li>
+                <li>Proverbs 15:3</li>
+                <li>Jeremiah 23:23, 24</li>
+                <li>Daniel 2:22, 28</li>
+                <li>Acts 15:18</li>
+                <li>Romans 11:33; 16:27</li>
+                <li>Hebrews 4:13</li>
+                <li>1 John 1:5</li>
+                <li>Jude 25</li>
+              </ul>
+            </div>
+            <div id = "art_1_7" class="expandableClosed">
+              <button class="closeButton" onclick="closeBox('art_1_7')">x</button>
+              <h2>"Goodness"</h2>
+              <ul>
+                <li>Exodus 15:11; 34:6</li>
+                <li>Leviticus 11:44</li>
+                <li>Deuteronomy 4:31</li>
+                <li>1 Samuel 2:2</li>
+                <li>Psalm 86:15; 118:1; 145:8</li>
+                <li>Isaiah 6:3</li>
+                <li>Daniel 9:9</li>
+                <li>Joel 2:13</li>
+                <li>Jonah 4:2</li>
+                <li>Micah 7:18</li>
+                <li>Luke 1:77, 78</li>
+                <li>Romans 2:4</li>
+                <li>2 Corinthians 1:3</li>
+                <li>Ephesians 2:4</li>
+                <li>Hebrews 6:10</li>
+                <li>2 Peter 3:15</li>
+                <li>1 John 4:8</li>
+                <li>Revelation 15:3</li>
+              </ul>
+            </div>
+            <div id = "art_1_8" class="expandableClosed">
+              <button class="closeButton" onclick="closeBox('art_1_8')">x</button>
+              <h2>"Maker of All Things Visibile and Invisible"</h2>
+              <ul>
+                <li>Genesis 1:2</li>
+                <li>2 Kings 19:5</li>
+                <li>Nehemiah 9:6</li>
+                <li>Psalm 33:6; 100:3; 135:6</li>
+                <li>Acts 17:24</li>
+                <li>Ephesians 3:9</li>
+                <li>Colossians 1:16</li>
+                <li>Hebrews 3:4</li>
+                <li>Revelation 4:11; 10:6</li>
+              </ul>
+              <h2>"Preserver of All Things"</h2>
+              <ul>
+                <li>Deuteronomy 32:39, &c.</li>
+                <li>1 Samuel 2:6</li>
+                <li>1 Chronicles 29:11, 12</li>
+                <li>Job 12:9</li>
+                <li>Psalm 22:28; 75:6, 7; 95:3, 4, 5, 7</li>
+                <li>Isaiah 14:27; 40:11, 12, 13, 15, 22</li>
+                <li>Jeremiah 5:24; 18:6-9</li>
+                <li>Daniel 5:23</li>
+                <li>Matthew 6:25-30; 10:29, 30</li>
+                <li>Romans 11:36</li>
+              </ul>
+            </div>
             <p>And in unity of this Godhead there be three Persons, of one substance, power, and eternity; the Father, the 
   Son, and the Holy Ghost.</p>
           </article>
