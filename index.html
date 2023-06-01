@@ -39,14 +39,14 @@
       function checkScreen() {
         alert("Working");
         if (screen.width < 500) {
-          document.getElementById("navbar").classList.replace("navbarOpen", "navbarClosed");
+          useNavBar();
         }
       }
     </script>
   </head>
-  <body>
+  <body onload="checkScreen()">
     <main id="main-doc">
-      <nav id="navbar" class="navbarOpen" onload="checkScreen()">
+      <nav id="navbar" class="navbarOpen">
         <button class="nav-button" onclick="useNavBar()">Nav.</button>
         <header id="navHeader">The Thirty-Nine Articles</header>
         <ul id="navList">
