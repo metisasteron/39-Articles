@@ -7,11 +7,25 @@
     flex-direction: row;
   }
 
-  .nav-button {
-    max-width: 50px;
-    max-height: 30px;
+  #navbar {
+    margin-top: 0;
+    border-right: 1px solid black;
   }
   
+  .nav-button {
+    width: 40px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  #navBarContentsContainer {
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+
   .navbarOpen {
     width: 25%;
     min-width: 175px;
@@ -19,7 +33,7 @@
   }
 
   .navbarClosed {
-    width: 8%;
+    width: 15%;
   }
 
   .navbarContentsClosed {
@@ -41,14 +55,9 @@
     font-family: 'Cabin', sans-serif;
   }
   
-  #navbar{
-    border-right: 1px solid black;
-  }
-  
   #navbar ul {
     list-style-type: none;
     margin-left: -30px;
-  
   }
   
   li {
