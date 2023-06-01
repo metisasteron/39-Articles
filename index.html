@@ -11,28 +11,44 @@
     <script>
       function openBox(currentBox) {
           let el = document.getElementById(currentBox);
-          if (el.className = "expandableClosed") {
+          if (el.className == "expandableClosed") {
               el.classList.replace("expandableClosed", "expandableOpen");
           }
       }
 
       function closeBox(currentBox) {
           let el = document.getElementById(currentBox);
-          if (el.className = "expandableOpen") {
+          if (el.className == "expandableOpen") {
               el.classList.replace("expandableOpen", "expandableClosed");
           }
       }
 
-      function testing(passedVar) {
-         alert(passedVar);
+      function useNavBar() {
+        if (document.getElementById("navbar").className == "navbarOpen") {
+          document.getElementById("navbar").classList.replace("navbarOpen", "navbarClosed");
+          document.getElementById("navHeader").classList.add("navbarContentsClosed");
+          document.getElementById("navList").classList.add("navbarContentsClosed");
+        }
+        else {
+          document.getElementById("navbar").classList.replace("navbarClosed", "navbarOpen");
+          document.getElementById("navHeader").classList.remove("navbarContentsClosed");
+          document.getElementById("navList").classList.remove("navbarContentsClosed");
+        }
+      }
+
+      function checkScreen() {
+        if (screen.width < 500) {
+          document.getElementById("navbar").classList.replace("navbarOpen", "navbarClosed");
+        }
       }
     </script>
   </head>
   <body>
     <main id="main-doc">
-      <nav id="navbar">
-        <header>The Thirty-Nine Articles</header>
-        <ul>
+      <nav id="navbar" class="navbarOpen" onload="checkScreen()">
+        <button class="nav-button" onclick="useNavBar()">Nav.</button>
+        <header id="navHeader">The Thirty-Nine Articles</header>
+        <ul id="navList">
           <li><a href="#Article_I" class="nav-link">I. Of Faith in the Holy Trinity</a></li>
           <li><a href="#Article_II" class="nav-link">II. Of the Word or Son of God, Which Was Made Very Man</a></li>
           <li><a href="#Article_III" class="nav-link">III. Of the Going Down of Christ into Hell</a></li>
